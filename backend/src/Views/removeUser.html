@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Delete User</title>
+</head>
+<body>
+  <h1>Delete User</h1>
+  <form action="/admin/removeUser" method="POST">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required><br>
+
+    <label for="usertype">User Type:</label>
+    <input type="radio" id="usertype" name="usertype" value="admin" required> Admin
+    <input type="radio" id="usertype" name="usertype" value="patient" required> Patient
+    <input type="radio" id="usertype" name="usertype" value="pharmacist" required> pharmacist
+
+    <button type="submit">Delete User</button>
+    <br> <br>
+
+    <a href="/admin">Back</a>
+  </form>
+</body>
+</html>
